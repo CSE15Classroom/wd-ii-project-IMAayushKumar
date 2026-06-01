@@ -1,0 +1,70 @@
+.Navbar{
+    width: 100%;
+    display: flex;
+    padding: 20px 6%;
+    justify-content: space-between  ;
+    position: fixed;
+    font-size: 14px;
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.7) 10% ,transparent);
+    z-index: 1;
+}
+.NavbarLeft{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+
+}
+.NavbarLeft img{
+    width: 90px;
+
+}
+.NavbarLeft ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.NavbarLeft ul li{
+    cursor: pointer;
+}
+.NavbarRight{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.NavbarRight .icons{
+    width: 20px;
+    cursor: pointer;
+}
+.Navbar-profile img{
+   width: 35px;
+   border-radius: 4px;
+}
+.Navbar-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.Navbar .dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    background: #191919; 
+    padding: 18px 2px;
+    border-radius: 2px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+
+}
+.Navbar .dropdown p{
+    font-size: 13px;
+    cursor: pointer;
+}
+.Navbar-profile:hover .dropdown{
+    display: inline;
+}

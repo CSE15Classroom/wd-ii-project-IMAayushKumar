@@ -6,8 +6,15 @@ import play from "../../assets/play_arrow.png";
 import info from "../../assets/info.png";
 import TitleCards from "../../component/TitleCards/TitleCards";
 import Footer from "../../component/Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handlePlayClick = () => {
+    navigate('/player/squid-games');
+  };
+
   return (
     <div className="Home">
       <Navbar />
@@ -18,11 +25,11 @@ const Home = () => {
             Squid Game is a sharp, dark critique of modern capitalism, wealth inequality, and the lengths to which a desperate person will go to survive.
           </p>
           <div className="hero-btns">
-            <button className="btn">
+            <button className="btn" onClick={handlePlayClick}>
               <img src={play} alt="" />
               Play
             </button>
-            <button className="btn dark-btn">
+            <button className="btn dark-btn" onClick={handlePlayClick}>
               <img src={info} alt="" />
               Info
             </button>

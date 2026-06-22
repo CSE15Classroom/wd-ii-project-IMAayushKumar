@@ -68,3 +68,19 @@
 .Navbar-profile:hover .dropdown{
     display: inline;
 }
+
+.login-btn {
+    background-color: #E50914;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #C50812;
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Navbar.css'
 import logo from '../../assets/netflix_logo.svg'
 import search from '../../assets/search.png'
@@ -7,6 +8,7 @@ import profile from '../../assets/netflix_profiles.png'
 import drop from '../../assets/arrow_drop_down.png'
 
 const Navbar = () => {
+   const navigate = useNavigate()
    
   const navRef = useRef();
 
@@ -36,6 +38,7 @@ const Navbar = () => {
       <img src={search} alt=""  className='icons'/>
       <p>Children</p>
       <img src={bell}alt=""  className='icons'/>
+      <button className="login-btn" onClick={() => navigate('/login')}>Login</button>
       <div className="Navbar-profile">
       <img src={profile} alt="" className='profile' />
       <img src={drop} alt="" />
